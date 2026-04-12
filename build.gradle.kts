@@ -45,6 +45,11 @@ allOpen {
 	annotation("jakarta.persistence.Embeddable")
 }
 
+// 매개변수가 없는 생성자를 자동으로 추가
+noArg {
+	annotation("javax.persistence.Entity")
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
