@@ -1,4 +1,6 @@
 package com.example.demo.common.status
 
-class EnumStatus {
+enum class Gender(val desc: String) {
+    MAN("남"),
+    WOMAN("여")
 }
