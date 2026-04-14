@@ -19,7 +19,7 @@ import java.time.LocalDate
 class Member(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    val id: Long? = null,
+    var id: Long? = null,
 
     @Column(nullable = false, length = 30, updatable = false)
     val loginId: String,
